@@ -1,14 +1,12 @@
-
-# NeonMint Template Documentation
+# **NeonMint 模板文档**
 
 ![neonmint](https://github.com/user-attachments/assets/ae539704-2292-492f-882c-c90595b34717)
 
+## 🎯 概述
 
-## 🎯 Overview
+**NeonMint** 是一个极简现代风格的模板，专为开发者和数字创意工作者设计。它采用深色基调搭配薄荷绿色点缀，提供干净、优雅且功能性强的视觉体验，非常适合作品集、仪表盘或技术类落地页使用。
 
-**NeonMint** is a minimalist and modern template designed for developers and digital creatives. Its dark-toned aesthetic with mint green accents offers a clean, elegant, and functional visual experience, ideal for portfolios, dashboards, or tech landing pages.
-
-## 📁 Project Structure
+## 📁 项目结构
 
 ```bash
 └── 📁NeonMint
@@ -20,40 +18,40 @@
         ├── favicon-32x32.png
         ├── favicon.ico
         └── 📁images
-            ├── 📁posts    # Post images
-            └── 📁projects # Project images
-        └── site.webmanifest # PWA configuration file
+            ├── 📁posts    # 文章图片
+            └── 📁projects # 项目图片
+        └── site.webmanifest # PWA 配置文件
     └── 📁src
-        ├── 📁components  # Reusable UI components
-        │   ├── 📁blog    # Blog components
-        │   ├── 📁layout  # Layout components
-        │   ├── 📁portfolio # Portfolio components
-        │   └── 📁ui      # UI components
-        ├── 📁icons       # Icons (.svg)
-        ├── 📁layouts     # Site layouts
-        │   ├── Layout.astro           # Main application layout
-        │   ├── MarkdownAbout.astro    # About-me page layout
-        │   ├── MarkdownPostLayout.astro # Posts page layout
-        │   └── ProjectLayout.astro    # Projects page layout
-        ├── 📁pages       # Site pages
-        │   ├── about-me.md            # About-me page
-        │   ├── 📁blog   # All posts page
-        │   │   ├── index.astro        # Blog home page
-        │   │   ├── 📁posts            # Blog posts
-        ├── │   ├── └── index.astro     # All posts page
-        │   │   ├── 📁tags             # Blog tags
-        │   │   └── 📁techs            # Blog technologies
-        │   ├── index.astro            # Home page
+        ├── 📁components  # 可复用的UI组件
+        │   ├── 📁blog    # 博客组件
+        │   ├── 📁layout  # 布局组件
+        │   ├── 📁portfolio # 作品集组件
+        │   └── 📁ui      # UI 组件
+        ├── 📁icons       # 图标(.svg)
+        ├── 📁layouts     # 网站布局
+        │   ├── Layout.astro           # 主应用布局
+        │   ├── MarkdownAbout.astro    # 关于页面布局
+        │   ├── MarkdownPostLayout.astro # 文章页面布局
+        │   └── ProjectLayout.astro    # 项目页面布局
+        ├── 📁pages       # 网站页面
+        │   ├── about-me.md            # 关于页面
+        │   ├── 📁blog   # 所有文章页面
+        │   │   ├── index.astro        # 博客首页
+        │   │   ├── 📁posts            # 博客文章
+        ├── │   ├── └── index.astro     # 所有文章页面
+        │   │   ├── 📁tags             # 博客标签
+        │   │   └── 📁techs            # 博客技术
+        │   ├── index.astro            # 首页
         │   ├── 📁portfolio
-        │   │   └── 📁projects         # Portfolio projects
-        │   ├── robots.txt.ts          # robots.txt configuration
-        │   └── rss.xml.js             # RSS configuration
+        │   │   └── 📁projects         # 项目作品
+        │   ├── robots.txt.ts          # robots.txt 配置
+        │   └── rss.xml.js             # RSS 配置
         ├── 📁scripts
-        │   └── menu.js                # Menu script
+        │   └── menu.js                # 菜单脚本
         ├── 📁styles
-        │   └── global.css             # Global styles
+        │   └── global.css             # 全局样式
         └── 📁utils
-            └── languages.ts           # Technology tools configuration
+            └── languages.ts           # 技术工具配置
     ├── .gitignore
     ├── astro.config.mjs
     ├── package-lock.json
@@ -62,99 +60,97 @@
     └── tsconfig.json
 ```
 
-## 🛠️ Technology Stack
+## 🛠️ 技术栈
 
-- **Framework**: Astro v5.6.1
-- **UI Library**: Preact v10.26.2
-- **Styling**: TailwindCSS v4.0.8
-- **Icons**: astro-icon v1.1.5
-- **Syntax Highlighting**: PrismJS v1.30.0
-- **Animations**: tailwindcss-animated v2.0.0
-- **Analytics**: @vercel/speed-insights v1.2.0
+- **框架**: Astro v5.6.1
+- **UI 库**: Preact v10.26.2
+- **样式**: TailwindCSS v4.0.8
+- **图标**: astro-icon v1.1.5
+- **语法高亮**: PrismJS v1.30.0
+- **动画**: tailwindcss-animated v2.0.0
+- **分析统计**: @vercel/speed-insights v1.2.0
 
-## ✨ Key Features
+## ✨ 核心特性
 
-1. **🚀 Performance Optimized**
-   - Static site generation
-   - Partial hydration with Preact
-   - Optimized images and assets
+1. **🚀 性能优化**
+   - 静态网站生成
+   - 使用 Preact 进行部分水合（hydration）
+   - 图片与资源优化
 
-2. **💻 Modern Development Experience**
-   - TypeScript support
-   - Hot module replacement
-   - ESLint integration
+2. **💻 现代开发体验**
+   - 支持 TypeScript
+   - 热模块替换
+   - ESLint 集成
 
-3. **🔍 SEO & Analytics**
-   - Built-in sitemap generation
-   - RSS feed support
+3. **🔍 SEO 与分析**
+   - 内建站点地图生成
+   - RSS 订阅支持
    - Vercel Speed Insights
 
-4. **🎨 Styling & UI**
-   - TailwindCSS for utility-first styling
-   - Animated components
-   - Responsive design
-   - Dark mode support
+4. **🎨 样式与UI**
+   - 使用 TailwindCSS 进行实用优先的样式设计
+   - 动画组件
+   - 响应式设计
+   - 支持暗黑模式
 
-## 🚀 Getting Started
+## 🚀 快速开始
 
-1. **📦 Installation**
+1. **📦 安装**
 
-   ### 🚀**Astro Installation**
+   ### 🚀**通过 Astro 安装**
    ```bash
    npm create astro@latest -- --template EFEELE/neonmint
    ```
-   or
-   ### 🔧**Manual Installation**
+   或者  
+   ### 🔧**手动安装**
    
-   #### Clone Repository
+   #### 克隆仓库
    ```bash
    git clone https://github.com/EFEELE/NeonMint.git
    ```
-   #### Install Dependencies
+   #### 安装依赖
    ```bash
    npm install
    ```
 
-  
-
-3. **⚡ Development**
+3. **⚡ 开发模式**
    ```bash
    npm run dev
    ```
 
-4. **🏗️ Build**
+4. **🏗️ 构建**
    ```bash
    npm run build
    ```
 
-5. **👀 Preview**
+5. **👀 预览**
    ```bash
    npm run preview
    ```
 
-## ⚙️ Configuration
+## ⚙️ 配置
 
-The project is configured through several key files:
+该项目通过以下关键文件进行配置：
 
-- `astro.config.mjs`: Main Astro configuration
-- `tailwind.config.js`: TailwindCSS configuration
-- `tsconfig.json`: TypeScript configuration
+- `astro.config.mjs`: 主要的 Astro 配置文件
+- `tailwind.config.js`: TailwindCSS 配置
+- `tsconfig.json`: TypeScript 配置
 
-## 🎨 Customization
+## 🎨 自定义设置
 
-### 📄 Adding New Pages
+### 📄 添加新页面
 
-Create new `.astro` files in the `src/pages` directory. The file name will determine the route.
+在 `src/pages` 目录中创建新的 `.astro` 文件。文件名将决定路由路径。
 
-### 🔧 Adding New Languages or Technologies
+### 🔧 添加新语言或技术
 
-To incorporate a new programming language or technological tool into the site's capsules, follow these steps:
+要将新的编程语言或技术工具添加到站点胶囊中，请按照以下步骤操作：
 
-1. **🖼️ Add the SVG icon**: Place the SVG file of the language or tool in the `src/icons` folder.
+1. **🖼️ 添加 SVG 图标**：将该语言或工具的 SVG 文件放置在 `src/icons` 文件夹中。
 
-        > **💡 Recommendation**: For SVG icons, I recommend using [SVGL](https://svgl.app/), an excellent library of high-quality vectors that offers optimized icons for most popular languages and technologies.
+    > **💡 推荐**：对于 SVG 图标，我推荐使用 [SVGL](https://svgl.app/)，这是一个优秀的高质量矢量图库，为大多数流行语言和技术提供了优化的图标。
 
-2. **📝 Register the language**: Open the `utils/languages.ts` file and add a new entry to the languages object following this format:
+2. **📝 注册语言**：打开 `utils/languages.ts` 文件，并按如下格式在 `languages` 对象中添加新条目：
 
    ```typescript
    html: {
@@ -163,24 +159,24 @@ To incorporate a new programming language or technological tool into the site's 
    },
    ```
 
-   Where:
-   - `html`: Is the unique identifier for the language
-   - `name`: Is the name that will be displayed visibly in the interface
-   - `iconName`: Is the name of the SVG file without the extension (must match exactly with the file name in `src/icons`)
+   其中：
+   - [html](file://c:\Users\34446\Desktop\TWOS%20HOME\index.html)：是该语言的唯一标识符
+   - `name`：是在界面上可见显示的名称
+   - `iconName`：是 SVG 文件的名称（不带扩展名），必须与 `src/icons` 中的文件名完全匹配
 
-Once these steps are completed, the new language or technology will be available for use in the site's capsules. You can select it when creating or editing projects or posts, and the corresponding icon will be displayed correctly in the interface.
+完成这些步骤后，新的语言或技术将在站点的胶囊中可用。在创建或编辑项目或文章时可以选择它，相应的图标将在界面中正确显示。
 
-If you encounter any issues during this process, try restarting the development server. In some cases, changes to configuration files or static resources require a restart to be detected correctly.
+如果在此过程中遇到任何问题，请尝试重新启动开发服务器。某些情况下，配置文件或静态资源的更改需要重启才能被正确检测。
 
-To verify that the new language has been added correctly, check the list of available technologies in the user interface after restarting the server.
+要在用户界面中验证新语言是否已正确添加，请在重启服务器后检查可用技术列表。
 
 ---
 
-### 🧷 Favicon Setup
+### 🧷 Favicon 设置
 
-To customize your site's favicon and web app icons, you can generate all the necessary variants using [favicon.io](https://favicon.io/favicon-converter/). Upload your logo or icon, and the tool will create a full set of optimized files for various devices and platforms.
+要自定义站点的 favicon 和网页应用图标，您可以使用 [favicon.io](https://favicon.io/favicon-converter/) 生成所有必要的变体。上传您的标志或图标，该工具将为您创建一套针对各种设备和平台优化的文件。
 
-Place the generated files in the `📂 public` directory as follows:
+将生成的文件放置在 `📂 public` 目录下，如下所示：
 
 ```bash
 📂 public
@@ -193,33 +189,32 @@ Place the generated files in the `📂 public` directory as follows:
 └── 📄 site.webmanifest
 ```
 
-> 💡 Don’t forget to update the contents of `site.webmanifest` to match your app’s name, description, and theme color for a complete PWA experience.
+> 💡 不要忘记更新 `site.webmanifest` 的内容，以匹配您的应用名称、描述和主题颜色，以便获得完整的 PWA 体验。
 
 ---
 
-### 🎨 Styling
+### 🎨 样式设置
 
-- Use TailwindCSS classes for styling
-- Add custom styles in `src/styles/global.css`
+- 使用 TailwindCSS 类进行样式设置
+- 在 `src/styles/global.css` 中添加自定义样式
 
-### 🧩 Components
+### 🧩 组件
 
-- Create reusable components in `src/components`
-- Import icons using `astro-icon`
+- 在 `src/components` 中创建可复用的组件
+- 使用 `astro-icon` 导入图标
 
-## 🚀 Deployment
+## 🚀 部署
 
-The site is configured for deployment on Vercel, but can be deployed to any static hosting service.
+该站点配置为部署在 Vercel 上，但也可以部署到任何静态托管服务上。
 
-## 🤝 Contributing
+## 🤝 贡献指南
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+1. Fork 仓库
+2. 创建功能分支
+3. 提交更改
+4. 推送到分支
+5. 创建 Pull Request
 
-## 📄 License
+## 📄 许可证
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
+该项目采用 MIT 许可证 —— 详见 LICENSE 文件了解详细信息。
