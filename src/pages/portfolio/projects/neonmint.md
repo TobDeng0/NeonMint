@@ -1,11 +1,11 @@
 ---
 layout:  /src/layouts/ProjectLayout.astro
-title: 'NeonMint'
-pubDate: 2025-04-05
+title: '一言之际'
+pubDate: 2023-10-28
 description: 'NeonMint is a modern, minimalist template crafted for developers and digital creatives.'
 languages: ["astro", "tailwind", "cloudflare", "javascript","vercel"]
 image:
-  url: "/images/projects/neonmint.webp"
+  url: "/images/projects/yiyan.webp"
   alt: "Thumbnail of Astro arches."
 --- 
 
